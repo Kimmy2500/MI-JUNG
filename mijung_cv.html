@@ -1,0 +1,1143 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+
+	/*1. 가장 밑 바탕...*/	
+
+	.boxed {
+
+		background-image: url("http://gridus-html.neuethemes.net/108/assets/custom/images/backgrounds/dark_fabric.png");
+		display: block;
+		background-color: #676767;
+		position: relative;
+		max-width: 1260px;
+		margin-right: auto;
+		margin-left: auto;
+		box-shadow: rgba(0,0,0,0.3)0020px 4px;
+
+			}
+	/*2. 배경 컨테이너 설정이 안먹어서 html에 강제로 썼음. 수정해야...*/	
+	#container{ 
+
+		position: center;
+		margin-top: 20px;
+
+		}
+	/*3. 프로필 사진 삽입...*/	
+	#userpic{
+
+		float:left;
+		width:418px;
+		min-height:360px;
+		background:white;
+
+			}
+	
+	/*4. 이름..h3로 텍스트 넣음..*/
+	#name_box{
+
+		font-size:30px;
+		font-family: "Dosis", sans-serif;
+		font-weight: 300;
+		color:white;
+		padding-left: 20px;
+		padding-top: 30px;
+		line-height: 5.1em;
+		float:left;
+		width:700px;
+		height:125px;
+		background:#4f4f4f;
+		margin-left: 0px;
+
+		}
+
+	/*5. 다운 이모티콘.span으로 아이콘 삽입...*/
+	#down{
+
+		float:left;
+		width:150px;
+		height:125px;
+		background:#474747;
+		font-size: 40px;
+		opacity: .6;
+		color: #efefef;
+		padding: 42px 52px;
+
+		}
+
+	/*6.  효과가 들어가야 하는 텍스트 칸....*/	
+	#text{
+
+		
+		color:white;
+		float:left;
+		width:700px;
+		height:125px;
+		background:#3f3f3f;
+		position: relative;
+
+		}
+
+	#text h4{
+
+		font-size:24px;
+		line-height: 1.8em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		font-family: "Dosis", sans-serif;
+		font-weight: 400;
+		padding-top: 30px;
+		padding-left: 20px;
+
+	}
+
+	/*7.  비핸스 아이콘...*/		
+	#be{
+		float:left;
+		width:150px;
+		height:125px;
+		background:#373737;
+		font-size: 50px;
+		opacity: .6;
+		color: #efefef;
+		padding: 38px 48px;
+
+		}
+	
+	/*8.  home 아이콘 삽입...*/			
+	#home{
+
+		float:left;
+		width:140px;
+		height:125px;
+		background:#1abc9c;
+		font-size: 40px;
+		padding: 30px 47px;
+		color: rgba(255, 255, 255, 0.6);
+		display: block;
+
+		}
+
+	/*8-1.  home 아이콘 밑에 들어가는 텍스트...*/		
+	#h-font {
+
+		font-size: 12px;
+		display: block;
+		width: 100px;
+		text-align: center;
+		font-weight: 600;
+		padding-right: 53px; 
+		padding-top: 5px;
+		color:white;
+
+		}
+
+	/*9.  resume 아이콘 삽입...*/			
+	#resume{
+
+		float:left;
+		width:140px;
+		height:125px;
+		background:#3498db;
+		font-size: 40px;
+		padding: 30px 45px;
+		color: rgba(255, 255, 255, 0.6);
+		display: block;
+
+		}
+
+	/*9-1.  resume 아이콘 밑에 들어가는 텍스트...*/	
+	#re-font {
+
+		font-size: 12px;
+		display: block;
+		width: 100px;
+		text-align: center;
+		font-weight: 600;
+		padding-right: 53px; 
+		padding-top: 5px;
+		color:white;
+
+		}	
+	
+	/*9.  portfolio 아이콘 삽입...*/		
+	#pf{
+
+		float:left;
+		width:140px;
+		height:125px;
+		background:#9b59b6;
+		font-size: 40px;
+		padding: 30px 48px;
+		color: rgba(255, 255, 255, 0.6);
+		display: block;
+
+		}
+
+	/*9-1.  portfolio 아이콘 밑에 들어가는 텍스트...*/		
+	#pf-font {
+
+		font-size: 12px;
+		width: 100px;
+		text-align: center;
+		font-weight: 600;
+		margin-left: -27px; 
+		padding-top: 5px;
+		color:white;
+
+		}	
+
+	/*10.  contacts 아이콘 삽입...*/	
+	#contacts{
+
+		float:left;
+		width:140px;
+		height:125px;
+		background:#e67e22;
+		font-size: 40px;
+		padding: 30px 55px;
+		color: rgba(255, 255, 255, 0.6);
+
+
+		}
+
+	/*10-1.  contacts 아이콘 밑의 텍스트...*/	
+	#con-font{
+		font-size: 12px;
+		width: 100px;
+		text-align: center;
+		font-weight: 600;
+		padding-right: 50px;
+		padding-top: 10px;
+		color:white;
+	
+		}
+
+
+	/*11.  feedback 아이콘 삽입...*/		
+	#feedback{
+
+		float:left;
+		width:140px;
+		height:125px;
+		background:#e74c3c;
+		font-size: 40px;
+		padding: 30px 50px;
+		color: rgba(255, 255, 255, 0.6);
+
+		}
+
+	/*11-1.  feedback 아이콘 밑의 텍스트...*/
+	#feed-font{
+
+		font-size: 12px;
+		width: 100px;
+		text-align: center;
+		font-weight: 600;
+		padding-right: 50px;
+		padding-top: 10px;
+		color:white;
+	
+		}
+
+	/*12.  blog 아이콘 삽입...*/	
+	#blog{
+	
+		float:left;
+		width:142px;
+		height:125px;
+		background:#d9a81d;
+		font-size: 40px;
+		padding: 30px 50px;
+		color: rgba(255, 255, 255, 0.6);
+		}
+
+	/*12.  blog 아이콘 밑의 텍스트...*/	
+	#blog-font{
+
+		font-size: 12px;
+		width: 100px;
+		text-align: center;
+		font-weight: 600;
+		padding-right: 50px;
+		padding-top: 10px;
+		color:white;
+	
+		}
+
+	/*13.  'about me'박스. 제목 부분 텍스트 제외 각각 디브를 만들어 아이콘과 텍스트를 삽입...*/	
+	.about-box {
+
+		float: left;
+		width: 840px;
+		height: 402px;
+		background-color: #ffffff;
+		}
+
+	/*13-1. 'about me'박스 안쪽의 패딩 지정 디브...*/	
+	.row-padding{
+		
+		float: left;
+		padding: 35px 50px 40px 50px;
+		width: 840px;
+		height: 353px;
+
+	}
+
+	/*13-2. 'about me'박스의 제목에 해당하는 부분...*/	
+	#about-me{
+
+		float: left;
+		width: 740px;
+		height: 118px;
+		font-family: "Dosis", sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+
+		}
+
+
+	/*15. 'about me'박스 안의 텍스트 디브들을 감싸는 디브 영역..*/
+	.row-box{
+		
+
+		font-size: 20px;
+		width: 740px;
+		height: 150px;
+		float: left;
+	}
+
+	/*16. 'about me'안의 아이콘 디브..*/
+	.row-icon{
+
+		color: black;
+		font-size: 20px;
+		float: left;
+		width: 246.66px;
+		height: 150px;
+
+	}
+
+	/*16. 'about me'안의 아이콘 디브..*/
+	.row-text{
+		
+		color: black;
+		float: left;
+		font-size: 14px;
+		width: 146.66px;
+		height: 100px;
+
+	}
+
+	/*17. 'about me'박스안 쪽 이모티콘 텍스트 박스의 h5글자 볼드 지정...*/	
+	.row-text h5{
+
+		font-weight: bold;
+	}
+
+	/*18. 'personal info'...*/	
+	.p-info{
+		
+		line-height: 1.2em;
+		font-family: "Dosis", sans-serif;
+		font-size: 12px;
+		float: left;
+		background-color: #efefef;
+		width: 420px;
+		height: 402px;
+		padding-left: 50px;
+		padding-top: 30px;
+
+		}
+	/*18-1. 'personal info'의 'one'디브 설정 ...*/	
+	.one{
+		width: 96px;
+		height: 22px;
+		float: left;
+		margin-right: 40px;
+	}
+	/*18-2. 'personal info'의 'p-info'디브 에서 h3스타일 지정...*/	
+	.p-info h3{
+
+		font-size: 32px;
+		margin-bottom: 10px;
+	}
+	/*18-3. 'PERSONAL INFO' 세부 사항이 들어있는 'fullwidth'디브 설정.*/
+	.fullwidth{
+		
+		margin-top: 20px;
+		float: left;
+		width: 320px;
+		height: 238px;
+	}
+	/*18-3. 'fullwidth'디브 안의 각 텍스트를 담고있는 디브 설정.*/
+	.fullbox{
+
+		margin-bottom: 33px;
+	}
+ 	/*18-3. 'fullwidth'디브 안의 p태그 설정.*/
+	.one p {
+
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+	/*19.'PRO. EXPERIENCE'디브 시작*/
+	#pro{
+
+		font-family: "Dosis", sans-serif;
+		font-size: 12px;
+		float: left;
+		background-color: #9b59b6;
+		width: 420px;
+		height: 427px;
+		color: white;
+		padding-left: 50px;
+		padding-top: 20px;
+
+ 		}
+
+	.ul li a{
+
+		cursor: pointer;
+	}
+
+	/*19-1.'PRO. EXPERIENCE'디브안의  h3설정*/
+	#pro h3{
+		font-size: 32px;
+	}
+	/*19-2.'PRO. EXPERIENCE'디브 안의 컨텐츠 들을 감싸고 있는 디브*/
+	.full-pro{
+
+		padding-top: 15px;
+		padding-left: -15px;
+		width: 313px;
+		height: 202px;
+		border-left: solid 1px;
+	}
+
+	.full-pro a{
+
+		position: relative;
+		color: #ffffff;
+	
+	}
+	
+	.full-pro .company{
+
+		font-size: 16px;
+		font-weight: bold;
+
+	}
+	.full-pro .date {
+
+		list-style: none;
+	}
+
+
+	.full-pro .position {
+
+		list-style: none;
+	}
+
+	.full-pro .ul{
+
+		padding-bottom: 20px;
+
+	}
+	/*19-3.'PRO. EXPERIENCE'디브의 버튼 설정*/
+	#pro .btn{
+
+		margin-top: 2px;
+		background-color: rgba(255, 255, 255, 0.3);
+		color: #ffffff !important;
+	}
+	.btn{
+
+		margin-top: 20px;
+		background-color: rgba(255, 255, 255, 0.3);
+		color: #ffffff !important;
+	}
+
+	/*20. 'MY PROFESSIONAL SKILLS'디브 시작. */
+	#skills{
+
+		padding-left: 50px;
+		padding-top: 20px;
+		font-family: "Dosis", sans-serif;
+		color: #ffffff;
+		float: left;
+		background-color: #3498db;
+		width: 840px;
+		height: 427px;
+		
+ 		}
+
+  	#skills h3{
+
+  		font-size: 32px;
+  	}
+
+	/*20-1. 'MY PROFESSIONAL SKILLS'의 각 컨텐츠를 감싸고 있는 디브*/
+  	.circle-box{
+
+		font-size: 13px;
+		margin-left: 25px;
+  		position: relative;
+		display: inline-block;
+		margin-top: 30px;
+  		width: 200px;
+  		height: 262px;
+  	}
+	
+	/*20-2. 자바로 원을 넣었는데 움직이는 효과를 어떻게 넣는지 모르겠습니다.*/
+	.circle-box div{
+
+		position: absolute;
+		font-size: 24;
+		font-family: "Montserrat", sans-serif;
+		font-weight: bold;
+		top: 40px;
+		left: 29px;
+		line-height: 40px;
+
+	}
+	/*20-3.도표 안의 퍼센트 숫자.*/
+	.circle-box h4{
+
+		font-size: 18px;
+		font-family: "Montserrat", sans-serif;
+		font-weight: bold;		
+	}
+
+	/*21. 가장 밑 줄의 정보들이 들어가는 디브 시작. Samuel Anderson, DOWNLOAD CV등이 들어감*/
+	#row{
+
+		float: left;
+		background-color: #474747;
+		width: 1260px;
+		height: 192px;
+		
+ 		}
+	/*21-1. 각 세부 컨텐츠 디브.*/
+	.row-box{
+
+		margin-left: 25px;
+		font-family: "Dosis", sans-serif;
+		color: #ffffff;
+		margin-top: 20px;
+		width: 1190px;
+		height: 109px;
+	}
+	/*21-1. 각 세부 컨텐츠 디브.*/
+	.last-box{
+
+		font-family: "Dosis", sans-serif;
+		float: left;
+		display: inline-block;
+		margin-left: 30px;
+		width: 267.5px;
+		height: 109px;
+	}
+
+
+	.last-box h4{
+
+		
+		letter-spacing: 3px;
+		color: #efefef;
+		font-weight: 400;
+		font-size: 18px;
+		letter-spacing: 3px;
+	}
+
+	.last-box p{
+		
+		line-height: 20px;
+		margin: 0 0 10px 0;
+		padding-top: 15px; 
+		font-size: 12px;
+		color: #b7b7b7;
+		display: inline-block;
+
+	}
+
+	.last-box a {
+
+		font-weight: 400;
+		font-family: "Raleway", sans-serif;
+		font-size: 13px;
+		display: inline-block;
+		padding: 15px 8px 4px 0;
+		margin-bottom: 4px;
+		border-radius: 4px;
+		color: #b7b7b7;
+		cursor: pointer;
+	}
+
+	.last-box input{
+		
+		margin-top: 15px; 
+		font-size: 12px;
+		border: 1px solid #d7d7d7;
+		line-height: inherit;
+		width: 100%;
+		font-family: "Raleway", sans-serif;
+		background-color: #777;
+		margin-bottom: 8px;
+		padding: 4px 8px;
+		border-radius: 0;
+		color: #ffffff;
+		box-sizing: border-box;
+		vertical-align: baseline;
+
+	}
+	/*21-1. 각 세부 컨텐츠 디브 중 sns 디브.*/
+	.follow a{
+
+		font-family: "Raleway", sans-serif;
+		font-size: 14px;
+		padding-left: 12px;
+		box-sizing: border-box;
+		
+	}
+	
+	.divdewhite1{
+
+		display: block;
+		width: 1160px;
+		height: 15px;
+	}
+	/*22. 마지막 카피라이트.*/
+	.copyrights{
+		
+		float: left;
+		font-family: "Raleway", sans-serif;
+		display: block;
+		font-size: 11px;
+		color: #dfdfdf;
+		padding-top: 15px;
+		padding-left: 50px;
+	}
+
+	</style>
+
+</head>
+
+	<body class="boxed" src="dark_fabric">
+	
+		<div class="container"> <!--1.배경 컨테이너 설정이 안먹어서 html에 강제로 썼음. 수정해야.-->
+
+			<div style="margin:0px auto; width:1270px; height:1500px; position: center;" >
+
+				<div class="box01"> <!--2. 상단의 가장 큰 박스 틀.-->
+
+					<div id="userpic"> <!--3. 프로필 사진 삽입.-->
+
+						<a href="http://gridus-html.neuethemes.net/108/home.html#!">
+
+							<img style width="420px" height="375px" src="userpic01.jpg" >
+
+						</a>
+
+					</div>
+
+					<div class="name"> <!--4. 이름..-->
+
+						<div id="name_box">
+
+							<h2 class="font-accident-two-light uppercase">SAMUEL ANDERSON</h2>
+
+						</div>	
+
+					</div>
+
+				</div>
+
+				<div id="down"> <!--5. 다운 이모티콘.-->
+
+					<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+
+				</div>
+
+				<div id="text"> <!--6. 효과가 들어가야 하는 텍스트 칸.-->
+					
+					<h4 class="headline">THE EXPERIENCED</h4>
+
+				</div> 
+
+				<div id="be"> <!--7. 비헨스 이모티콘.-->
+
+					<span class="fa fa-behance" aria-hidden="true"></span>
+
+				</div>	
+
+				<div id="home"> <!--8. home 이코티콘 삽입.-->
+
+					<i class="fa fa-flag-o" aria-hidden="true"></i>
+
+						<div id="h-font">
+
+							<span>HOME</span>
+
+						</div>
+				</div> 
+
+				<div id="resume"> <!--9. resume 이모티콘 삽입.-->
+
+					<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+
+						<div id="re-font">
+
+							<span>RESUME</span>
+
+						</div>
+
+				</div> 
+
+				<div id="pf"> <!--10. portfolio 이모티콘 삽입.-->
+
+					<i class="fa fa-briefcase" aria-hidden="true"></i>
+
+						<div id="pf-font">
+
+							<span>PORTFOLIO</span>
+
+						</div>
+	
+				</div> 
+
+
+				<div id="contacts"> <!--11. contacts 이모티콘 삽입.-->
+
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+
+						<span id="con-font">CONTACTS</span>
+
+				</div>
+
+
+				<div id="feedback"> <!--11. feedback 이모티콘 삽입.-->
+
+					<i class="fa fa-headphones" aria-hidden="true"></i>
+
+						<span id="feed-font">FEEDBACK</span>
+
+				</div>
+
+				<div id="blog"> <!--11. blog 이모티콘 삽입.-->
+
+					<i class="fa fa-pencil" aria-hidden="true"></i>
+
+						<span id="blog-font">BLOG</span>
+
+				</div> 
+				
+				<div class="about-box"> <!--12. 'about me'박스. 제목 부분 텍스트 제외 각각 디브를 만들어 아이콘과 텍스트를 삽입.-->
+					
+					<div class="row-padding">
+					
+						<div id="about-me"> <!--12-1. 'about me'박스의 제목에 해당하는 부분.-->
+
+							<h3>ABOUT ME</h3>
+
+								<h5 class="font-accident-one-bold uppercase subtitle" style="color:red">HARD-WORKING PERSON ON THE WAY TO THE SUCCESS...</h5>
+
+						</div>
+
+						<div class="row-box"> <!--12-2. 'about me'의 이모티콘과 텍스트를 감싸는 큰 디브 박스. 이 안에 creative, motivative, PUNCTUAL이 들어있음.-->
+
+								<div class="row-icon"> 	<!--13. 'about me'안의 아이콘 디브..-->
+
+									<div class="icon-1"> <i class="fa fa-picture-o" aria-hidden="true"></i> </div>
+
+										<div class="row-text"> 
+											
+											<h5>CREATIVE</h5>
+											
+											<p class="small">
+
+											Lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas sit amet henderit dolor at lacinia mi.
+
+											</p>
+
+										</div>
+
+								</div>
+
+								<div class="row-icon"> <!--13. 'about me'안의 아이콘 디브.-->
+
+									<div class="icon-1"> <i class="fa fa-bar-chart" aria-hidden="true"></i> </div>
+
+										<div class="row-text">
+											
+											<h5>MOTIVATED</h5>
+											
+											<p class="small">
+
+											Curabitur sit amet laoreet leo. Maecenas eget pulvinar arcu. Quisque fermentum nulla non urna placerat.
+
+											</p>
+
+										</div>
+								</div>
+
+								<div class="row-icon"> <!--13. 'about me'안의 아이콘 디브.-->
+
+									<div class="icon-1"> <i class="fa fa-clock-o" aria-hidden="true"></i> </div>
+											
+											<div class="row-text">
+											
+											<h5>PUNCTUAL</h5>
+											
+											<p class="small">
+
+											Sed scelerisque elit eget eros consectetur varius. Suspendisse laoreet rhoncus pellentesque.
+
+											</p>
+
+										</div>
+								</div>
+
+
+							</div>
+
+						</div>
+
+					</div>  <!--14. 'about me'디브 끝.-->
+						<div class="p-info"> <!--15. personal info의 가장 큰 디브. 이 안에 작은 디브로 PERSONAL INFO세부 사항이 들어있음-->
+
+							<div id="info">
+								<h3>PERSONAL INFO</h3>
+							</div>
+							
+							<div class="fullwidth">
+
+								<div class="fullbox">
+
+									<div class="one">
+
+										<p>NAME:</p>
+
+									</div>
+
+									<div class="two">
+
+										<p>Samuel Anderson</p>
+
+									</div>
+
+								</div>
+
+								<div class="fullbox">
+
+									<div class="one">
+
+										<p>DATE OF BIRTH:</p>
+
+									</div>
+
+									<div class="two">
+
+										<p>03/12/1980</p>
+
+									</div>
+
+								</div>
+
+								<div class="fullbox">
+
+									<div class="one">
+
+										<p>ADDRESS:</p>
+
+									</div>
+
+									<div class="two">
+
+										<p>1234. Direct drive. Daytona Beach. FI. USA</p>
+
+									</div>
+
+								</div>
+
+								<div class="fullbox">
+
+									<div class="one">
+
+										<p>PHONE:</p>
+
+									</div>
+
+									<div class="two">
+
+										<p>1234 567 8910</p>
+
+									</div>
+
+								</div>
+
+								<div class="fullbox">
+
+									<div class="one">
+
+										<p>EMAIL:</p>
+
+									</div>
+
+									<div class="two">
+
+										<p>james@anderson.com</p>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div> <!--15. 'personal info'디브 끝.-->
+
+						<div class="pro-ex"> <!--16. 'PRO. EXPERIENCE'디브 시작.-->
+
+							<div id="pro">
+
+								<h3>PRO. EXPERIENCE</h3>
+
+								<div class="full-pro">
+									
+									<ul class="ul">
+
+										<li class="date">02/2008 - 04/2010</li>
+
+										<li class="company">
+											<a>ABC BRODCAST INC. NEW YORK.</a>
+										</li>
+
+										<li class="position">Junior Designer</li>
+
+									</ul>
+
+									<ul class="ul">
+										
+										<li class="date">04/2010 - 06/2012</li>
+
+										<li class="company">
+											<a>LEO BURNETT LONDON OFFICE</a>
+										</li>
+
+										<li class="position">Senior Designer</li>
+
+									</ul>
+
+									<ul class="ul">
+										
+										<li class="date">06/2012 - present</li>
+
+										<li class="company">
+											<a>GOOGLE INC. DUBLIN</a>
+										</li>
+
+										<li class="position">UI/UX Designer</li>
+
+									</ul>
+
+									<button type="button" class="btn btn-default navbar-btn">Learn More</button>
+									
+
+								</div>
+
+							</div>
+												
+						</div> <!--16. 'PRO. EXPERIENCE'디브 끝.-->
+
+						<div class="p-skills"> 
+
+							<div id="skills"> <!--16. 'MY PROFESSIONAL SKILLS'디브 시작.-->
+								
+								<h3>MY PROFESSIONAL SKILLS</h3>
+
+								<div class="circle-box">    <!--자바로 원을 넣었는데 움직이는 효과를 어떻게 넣는지 모르겠습니다.-->
+									<canvas id="myCanvas1" width="120px" height="120px"></canvas>      
+		                              <script>
+		                              var c = document.getElementById("myCanvas1");
+		                              var ctx = c.getContext("2d");
+		                              ctx.beginPath();
+		                              ctx.arc(60, 60, 50, 0, 2 * Math.PI);
+		                              ctx.lineWidth=3;
+		                              ctx.strokeStyle="#ffffff";
+		                              ctx.stroke();
+		                              </script>
+
+									<div>72.5%</div>
+
+									<h4 class="circle-font">PROTOTYPING</h4>
+
+									<p>A prototype is an early sample. model, or release of a product built to test...</p>
+
+									<button type="button" class="btn btn-default navbar-btn">Learn More</button>
+
+								</div>
+
+								<div class="circle-box">   
+									<canvas id="myCanvas2" width="120px" height="120px"></canvas>      
+		                              <script>
+		                              var c = document.getElementById("myCanvas2");
+		                              var ctx = c.getContext("2d");
+		                              ctx.beginPath();
+		                              ctx.arc(60, 60, 50, 0, 2 * Math.PI);
+		                              ctx.lineWidth=3;
+		                              ctx.strokeStyle="#ffffff";
+		                              ctx.stroke();
+		                              </script>
+
+									<div>94.5%</div>
+
+									<h4 class="circle-font">DESIGN</h4>
+
+									<p>Design is the creation of a plan or convention for the construction of an object...</p>
+
+									<button type="button" class="btn btn-default navbar-btn">Learn More</button>
+
+								</div>
+
+								<div class="circle-box">   
+									<canvas id="myCanvas3" width="120px" height="120px"></canvas>      
+		                              <script>
+		                              var c = document.getElementById("myCanvas3");
+		                              var ctx = c.getContext("2d");
+		                              ctx.beginPath();
+		                              ctx.arc(60, 60, 50, 0, 2 * Math.PI);
+		                              ctx.lineWidth=3;
+		                              ctx.strokeStyle="#ffffff";
+		                              ctx.stroke();
+		                              </script>
+
+									<div>30.5%</div>
+
+									<h4 class="circle-font">DEVELOPMENT</h4>
+
+									<p>Software development is the prosess of comfuter programming...</p>
+
+									<button type="button" class="btn btn-default navbar-btn">Learn More</button>
+
+								</div>
+
+							</div>	<!--16. 'MY PROFESSIONAL SKILLS'디브 끝.-->
+
+						</div>
+
+						<footer class="last-row"> <!--17. 가장 밑의 footer 시작..-->
+
+							<div id="row"> <!--18. 가장 밑 줄의 정보들이 들어가는 디브 시작. Samuel Anderson, DOWNLOAD CV등이 들어감.-->
+
+								<div class="row-box">
+									
+									<div class="last-box">
+
+										<h4 class="row-font">Samuel Anderson</h4>
+
+										<p>Quality Web Design. Ui / UX Design. Part-time or Fulltime.</p>
+
+									</div>
+									
+									<div class="last-box">
+
+										<h4 class="row-font">DOWNLOAD CV</h4>
+										
+										<a href="#!">
+										
+											<i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+
+										English
+
+										</a>
+
+										<a href="#!">
+										
+											<i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+
+										German
+
+										</a>
+
+										<a href="#!">
+										
+											<i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+
+										Spanish
+
+										</a>
+
+									</div>
+									
+										<div class="last-box">
+
+											<h4 class="row-font">NEWSLETTRR</h4>
+
+										<input class="newsletter-email" type:"email" required name="ne" placeholder="Your Email">
+
+									</div>
+									
+									<div class="last-box">
+
+											<h4 class="row-font">FOLLOW ME</h4>
+
+											<div class="follow">
+
+													<a target="_blank" href="#">
+															
+														<i class="fa fa-facebook-square" aria-hidden="true"></i>
+													</a>
+												
+													<a target="_blank" href="#">
+														<i class="fa fa-twitter-square" aria-hidden="true"></i>
+													</a>
+	
+													<a target="_blank" href="#">
+														<i class="fa fa-pinterest-square" aria-hidden="true"></i>
+													</a>
+													
+													<a target="_blank" href="#">
+														<i class="fa fa-instagram" aria-hidden="true"></i>
+													</a>
+													
+													<a target="_blank" href="#">
+														<i class="fa fa-youtube" aria-hidden="true"></i>
+													</a>
+
+											</div>
+
+									
+									</div>
+									
+
+
+								</div>
+								
+									<div class="divdewhite1"></div>
+
+									<div class="copyrights">
+
+									<p>© 2016 Samuel Anderson.</p>
+
+									</div>
+
+							</div>  <!--18. 가장 밑 줄의 정보들이 들어가는 디브 끝.-->
+
+						</footer>
+
+				</div>
+			
+			</div> <!--19. 배경 컨테이너 디브 끝.-->
+		
+	</body>
+
+</html>
