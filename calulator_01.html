@@ -1,0 +1,131 @@
+<head>
+
+	<meta charset="utf-8">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	
+
+		<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+<style type="text/css">
+	
+	.container{
+
+		width: 300px;
+		height: 400px;
+		margin-top: 20px;
+		background-color: #676767	
+
+	}
+
+	.box p{
+
+		position: relative;
+		margin-top: 20px;
+		width: 100%;
+		display: block;
+
+
+	}
+
+</style>
+
+
+
+</head>
+
+	<body>
+
+	
+<script>
+	'use strict'
+
+		var num1 = 0;
+		var num2 = 0;
+
+		function getNumber(){
+			//선언된 전역 변수에 현재 입력된 값을 대입
+			num1 = Number(document.getElementById('num1').value);
+			num2 = Number(document.getElementById('num2').value);
+		}
+		
+		function setNumber(result){
+			//param으로 넘어온 값을 total 창에 표시
+			document.getElementById('tatal').value = result;
+		}
+		function plus(){
+			//현재 입력된 값을 전역변수에 대입하도록 호출
+			getNumber();
+			
+			//덧셈 계산 식 처리
+			var a=num1+num2;
+			console.log(result);
+			//결과 값을 결과값 input 창에 대입하기
+			return setNumber(result);
+
+		}
+		function sub(){
+			//현재 입력된 값을 전역변수에 대입하도록 호출
+			getNumber();
+			
+			//덧셈 계산 식 처리
+			var result=num1-num2;
+			console.log(result);
+			//결과 값을 결과값 input 창에 대입하기
+			return setNumber(result);
+		}
+		function div(){
+			//현재 입력된 값을 전역변수에 대입하도록 호출
+			getNumber();
+			
+			//덧셈 계산 식 처리
+			var result=num1/num2;
+			console.log(result);
+			//결과 값을 결과값 input 창에 대입하기
+			return setNumber(result);
+		}
+
+		function mul(){
+			//현재 입력된 값을 전역변수에 대입하도록 호출
+			getNumber();
+			
+			//덧셈 계산 식 처리
+			var result=num1*num2;
+			console.log(result);
+			//결과 값을 결과값 input 창에 대입하기
+			return setNumber(result);
+		}
+
+
+</script>
+
+		<input type="text" id="num1" placeholder="숫자를 입력하세요">
+			<br>	
+		<input type="text" id="num2" placeholder="숫자를 입력하세요">
+			<br>	
+		<input type="text" id="tatal" disabled="true">
+			<br>		
+
+			<br>			
+
+		<button onClick="plus();">더하기</button>
+			<br>	
+		<button onClick="sub();">빼기</button>
+
+			<br>
+		<button onClick="div();">나누기</button>
+			<br>
+		<button onClick="mul();">곱하기</button>	
+
+
+
+	</body>
